@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/id-card-outline.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>CELL</title>
+</head>
+
+<body>
+
+    <section id="newstate">
+        <h1>Olá!</h1>
+        <p>Seja bem-vindo ao <STRong>CELL</STRong></p>
+    </section>
+
+    <section id="cell">
+        <div id="up">
+            <div id="cam">
+                <div id="bol-cam"></div>
+            </div>
+        </div>
+
+        <div id="tela">
+            <div id="notify" onclick="notify()">
+                <div class="area-notify">
+                    <img src="assets/chatbubbles-outline.svg" alt="">
+                </div>
+
+                <div class="area-notify">
+                    <img src="assets/alarm-outline.svg" alt="">
+                    <img src="assets/battery-half-outline.svg" alt="">
+                    <div id="hours">
+                        <p id="horario">18:29</p>
+                    </div>
+                </div>
+
+                <div id="cell-stats">
+                    <div id="fawr">
+                        <div id="block-fawr">
+                            <button class="blocks-fawr" onclick="opemm()"><img id="s1" class="on" src="assets/wifi-outline.svg" alt="" >
+                                <img id="s11" class="of"  src="assets/blue/wifi-outlineblue.png" alt="" >
+                                <div class="line"></div>
+                            </button>
+                            <button class="blocks-fawr"><img class="on" src="assets/blue/volume-high-outlineblue.png" alt="">
+                                <img class="of" src="assets/volume-mute-outline.svg" alt="">
+                                <div class="line"></div>
+                            </button>
+                            <button class="blocks-fawr"><img class="on" src="assets/bluetooth-outline.svg" alt="">
+                                <img class="of" src="assets/blue/bluetooth-outlineblue.png" alt="">
+                                <div class="line"></div>
+                            </button>
+                            <button class="blocks-fawr"><img src="assets/build-outline.svg" alt="">
+                                <div class="line"></div>
+                            </button>
+                            <button class="blocks-fawr"><img src="assets/contrast-outline.svg" alt="">
+                                <div class="line"></div>
+                            </button>
+                            <button class="blocks-fawr"><img class="on" src="assets/airplane-outline.svg" alt="">
+                                <img class="of" src="assets/blue/airplane-outlineblue.png" alt="">
+                                <div class="line"></div>
+                            </button>
+                            <button class="blocks-fawr"><img class="on" src="assets/battery-half-outline.svg" alt="">
+                                <img class="of" src="assets/blue/battery-half-outlineblue.png" alt="">
+                                <div class="line"></div>
+                            </button>
+                            <button class="blocks-fawr"><img class="on" src="assets/accessibility-outline.svg" alt="">
+                                <img class="of" src="assets/blue/accessibility-outlineblue.png" alt="">
+                                <div class="line"></div>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div id="wifi" class="tale-blocks-fawr">
+                        <p class="titleabb">wifi</p>
+                        <div class="switch__container">
+                            <input id="swi1" class="switch switch--shadow" type="checkbox" onclick="act()">
+                            <label for="swi1"></label>
+                        </div>
+                        <p class="parg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste incidunt ab
+                            facere nisi magnam? Qui accusamus consectetur, aperiam natus consequuntur numquam dolorem
+                            iure eos maiores. Nostrum pariatur ipsa voluptates quo.</p>
+                    </div>
+                    <div id="som" class="tale-blocks-fawr">
+                        <p class="titleabb">som</p>
+                        <div class="switch__container">
+                            <input id="swi2" class="switch switch--shadow" type="checkbox">
+                            <label for="swi2"></label>
+                        </div>
+                        <p class="parg">Lorem ipunt ab facere nisi magnam? Qui accusamus consectetur, aperiam natus
+                            consequuntur numquam dolorem iure eos maiores. Nostrum pariatur ipsa voluptates quo.</p>
+                    </div>
+                    <div id="bluetooth" class="tale-blocks-fawr">
+                        <p class="titleabb">bluetooth</p>
+                        <div class="switch__container">
+                            <input id="swi3" class="switch switch--shadow" type="checkbox" >
+                            <label for="swi3"></label>
+                        </div>
+                        <p class="parg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste</p>
+                    </div>
+
+                    <div id="corp-stats">
+                        <div id="content-stats">
+                            <p>there are no notifications !</p>
+                        </div>
+                        <button id="foot-stats" >
+                            <div id="bar-spl"></div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="display">
+                <img id="butt-menu" onclick="showmenu()" src="assets/apps-outline.svg" alt="">
+
+                <section id="menu">
+
+                    <div class="past"></div>
+                    <div class="past"></div>
+                    <div class="past"></div>
+                    <iframe src="https://www.youtube.com/watch?v=ZYfLAHR60pk"></iframe>
+                    <a href="https://web.whatsapp.com/"><img class="past" src="assets/wats.jpg" alt=""></a>
+                    <a href="https://www.instagram.com/"><img class="past" src="assets/insta.jpg" alt=""></a>
+                    <a href="https://twitter.com/"><img class="past" src="assets/tt.jpg" alt=""></a>
+                    <a href="https://accounts.snapchat.com/"><img class="past" src="assets/snap.jpg" alt=""></a>
+                    <a href="https://www.linkedin.com/"><img class="past" src="assets/link.jpg" alt=""></a>
+                    <a href="https://www.youtube.com/"><img class="past" src="assets/you.jpg" alt=""></a>
+
+                </section>
+            </div>
+        </div>
+
+
+        <div id="down">
+            <button class="bar-down"><img src="assets/copy-outline.svg" alt=""></button>
+            <button id="home" onclick="home()"></button>
+            <button onclick="back()" class="bar-down"><img src="assets/arrow-undo-outline.svg" alt=""></button>
+        </div>
+    </section>
+
+    <script src="inter.js"></script>
+
+</body>
+
+</html>
