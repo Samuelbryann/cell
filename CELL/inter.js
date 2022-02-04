@@ -1,5 +1,4 @@
 setTimeout(() => {
-
     const newstate = document.getElementById("newstate")        //animação float
     newstate.style.opacity = "1"
 
