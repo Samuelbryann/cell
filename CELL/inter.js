@@ -41,9 +41,12 @@ function back() {
 
     const menu = document.getElementById("menu")    //voltar do menu para tela inicial
     menu.style.visibility = "visible"
+    const bolcam = document.getElementById("bol-cam")
+
 
     if (menu.style.visibility == "visible") {
         menu.style.visibility = "hidden"
+        bolcam.style.animationName = "ooo"
     }
 }
 
@@ -64,7 +67,6 @@ function act(){
         s1.style.display = "none"
         s11.style.display = "block"
     }
-
 }
 
 function home(){
@@ -75,7 +77,9 @@ function home(){
 
     const you = document.getElementById("you")
     const maps = document.getElementById("maps")
-
+    const permission = document.getElementById("permission")
+    const areacam = document.getElementById("area-camera")
+    const bolcam = document.getElementById("bol-cam")
 
     mn.style.visibility = "hidden"
     cs.style.visibility = "hidden"
@@ -84,17 +88,43 @@ function home(){
 
     you.style.display = "none"
     maps.style.display = "none"
+    permission.style.display = "none"
+    areacam.style.display = "none"
+    bolcam.style.animationName = "ooo"
+
 }
 
 function cam(){
-    const permission = document.getElementById("permission")
+    const permission = document.getElementById("permission")                    //aba de permissão para abrir camera
     permission.style.display = "flex"
 
 }
 
+function oncamera(){
+
+    navigator.mediaDevices.getUserMedia({video:true}).then(stream=>{
+        
+        const areacam = document.getElementById("area-camera")
+        areacam.style.display = "block"   
+                                                                                    //abrir e mostrar camera
+        const playcam = document.getElementById("displaycam")
+        playcam.srcObject = stream                                        
+
+    }).catch(error=>{console.log(error)})
+
+    setTimeout(() => {
+
+        const bolcam = document.getElementById("bol-cam")
+        bolcam.style.animationName = "bolcam"
+
+    }, 7000);
+
+   
+}
+
 function negarcam(){
     const permission = document.getElementById("permission")
-    permission.style.display = "none"
+    permission.style.display = "none"                                               
 }
 
 
@@ -106,17 +136,6 @@ function onyou(){
     const you = document.getElementById("you")
     you.style.display = "block"
 }
-
-
-
-
-
-
-
-
-
-
-
 
 function backcell(){
     const display = document.getElementById("display")
@@ -135,7 +154,7 @@ function backcell3(){
 function oncell(){
     const float = document.getElementById("float")
     const ondisplay = document.getElementById("ondisplay")
-    const notify = document.getElementById("notify")
+    const notify = document.getElementById("notify")                    //botao zuado de ligar cell
 
     
     if(float.style.right != "25%"){
@@ -146,8 +165,6 @@ function oncell(){
         float.style.right = "90%"
         ondisplay.style.display = "block"
         notify.style.display = "none"
-
-
     }
 }
 

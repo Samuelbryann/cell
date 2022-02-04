@@ -143,9 +143,14 @@
                         <h1>Permissão</h1>  
                         <p>você permite o acesso a câmera?</p>
                         <div id="perbutt">
-                            <button>permitir</button>
+                            <button onclick="oncamera()">permitir</button>
                             <button onclick="negarcam()">negar</button>
                         </div>
+                    </article>
+
+                    <article id="area-camera">
+                        <video id="displaycam" autoplay></video>
+                        <div id="but-record"></div>
                     </article>
 
                     <iframe id="you" src="https://www.youtube.com/embed/yq3TbJB3IMs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
