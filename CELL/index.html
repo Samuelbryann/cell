@@ -25,6 +25,10 @@
         </div>
 
         <div id="tela">
+
+            <section id="ondisplay"></section>
+
+
             <div id="notify" onclick="notify()">
                 <div class="area-notify">
                     <img src="assets/chatbubbles-outline.svg" alt="">
@@ -118,19 +122,34 @@
 
 
             <div id="display">
-                <iframe src="https://www.futuroinformatica.com.br"></iframe>
+
+
                 <img id="butt-menu" onclick="showmenu()" src="assets/apps-outline.svg" alt="">
+
                 <section id="menu">
 
-                    <div class="past"></div>
-                    <div class="past"></div>
-                    <div class="past"></div>
-                    <a href="https://web.whatsapp.com/"><img class="past" src="assets/wats.jpg" alt=""></a>
-                    <a href="https://www.instagram.com/"><img class="past" src="assets/insta.jpg" alt=""></a>
-                    <a href="https://twitter.com/"><img class="past" src="assets/tt.jpg" alt=""></a>
-                    <a href="https://accounts.snapchat.com/"><img class="past" src="assets/snap.jpg" alt=""></a>
-                    <a href="https://www.linkedin.com/"><img class="past" src="assets/link.jpg" alt=""></a>
-                    <a href="https://www.youtube.com/"><img class="past" src="assets/you.jpg" alt=""></a>
+                    <a href="https://web.whatsapp.com/"><img class="past" src="assets/Whats.png" alt=""></a>
+                    <a href="https://www.instagram.com/"><img class="past" src="assets/insta.png" alt=""></a>
+                    <a href="https://accounts.snapchat.com/"><img class="past" src="assets/snap.png" alt=""></a>
+                    <a href="https://www.linkedin.com/"><img class="past" src="assets/linked.png" alt=""></a>
+                    <img onclick="onyou()" class="past" src="assets/youtu.png" alt="">
+                    <img class="past" src="assets/icon-galeria.png" alt="">
+                    <img onclick="cam()" class="past" src="assets/camera.png" alt="">
+                    <img class="past" src="assets/playstore.png" alt="">
+                    <img onclick="onmaps()" class="past" src="assets/gmaps.png" alt="">
+
+
+                    <article id="permission">
+                        <h1>Permissão</h1>  
+                        <p>você permite o acesso a câmera?</p>
+                        <div id="perbutt">
+                            <button>permitir</button>
+                            <button onclick="negarcam()">negar</button>
+                        </div>
+                    </article>
+
+                    <iframe id="you" src="https://www.youtube.com/embed/yq3TbJB3IMs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.3623394543292!2d-46.71420268549446!3d-23.44739106327746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ec1b4bfa10fd326!2zMjPCsDI2JzUwLjYiUyA0NsKwNDInNDMuMyJX!5e0!3m2!1spt-BR!2sbr!4v1643906495591!5m2!1spt-BR!2sbr" loading="lazy"></iframe>
 
                 </section>
             </div>
@@ -143,6 +162,27 @@
             <button onclick="back()" class="bar-down"><img src="assets/arrow-undo-outline.svg" alt=""></button>
         </div>
     </section>
+
+    
+        <section id="backgrounds-cell">
+            <img onclick="backcell()" src="assets/wall.jpg" alt="">
+            <img onclick="backcell2()" src="assets/fund2.jpg" alt="">
+            <img onclick="backcell3()" src="assets/wall2.jpg" alt="">
+        </section>
+
+        <section id="on" onclick="oncell()">
+            <div id="float"></div>
+        </section>
+
+        
+
+        <section id="backgrounds-tale">
+            <img onclick="backtale()" src="assets/tale/back1.jpg" alt="">
+            <img onclick="backtale2()" src="assets/tale/back2.jpg" alt="">
+            <img onclick="backtale3()" src="assets/tale/back3.png" alt="">
+            <img onclick="backtale4()" src="assets/fund3.jpg" alt="">
+        </section>
+    
 
     <script src="inter.js"></script>
 

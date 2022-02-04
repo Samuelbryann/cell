@@ -23,17 +23,21 @@ body{
 }
 iframe{
     position: absolute;
+    top: 0%;
+    left: 0%;
     height: 100%;
     width: 100%;
+    border: none;
+    display: none;
 }
 #newstate{
     position: absolute;
     top: 20%;
     left: 3%;
     display: block;
-    background-color: rgba(255, 255, 255, 0.116);
+    background-color: rgb(17, 17, 17);
     border-radius: 10px;
-    border: outset rgba(221, 221, 221, 0.637) ;
+    border: outset #fb9b2a;
     box-shadow: 0px 0px 15px black;
     height: 150px;
     width: 20%;
@@ -64,6 +68,7 @@ iframe{
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    margin-left: 15%;
 }
 
 #up{
@@ -80,13 +85,14 @@ iframe{
 #cam{
     height: 70px;
     width: 70px;
-    background-color: rgba(0, 0, 0, 0.959);
+    background-color: rgb(0, 0, 0);
     transform: rotate(45deg);
     margin-bottom: 40px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 #bol-cam{
@@ -110,7 +116,7 @@ iframe{
     height: 15px;
     width: 98%;
     margin-left: 1%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     border-radius: 10px 10px 0px 0px;
@@ -394,6 +400,16 @@ iframe{
 
 }
 
+#ondisplay{
+    position: absolute;
+    top: 13%;
+    width: 21.8%;
+    height: 65%;
+    display: block;
+    background-color: rgb(2, 2, 2);
+    z-index:1;
+}
+
 #butt-menu{
     width: 12%;
     height: 10%;
@@ -422,6 +438,53 @@ iframe{
     cursor: pointer;
 }
 
+#permission{
+    position: absolute;
+    top: 4%;
+    left: 0%;
+    width: 100%;
+    height: 22%;
+    background-color: whitesmoke;
+    padding: 5px 5px 0px 5px;
+    display: none;
+    flex-direction: column;
+
+}
+
+#permission h1{
+    margin: 5px 0px 0px 10px;
+}
+
+#permission p {
+    font-size: 12px;
+    margin: 6px 0px 0px 10px;
+
+}
+
+#perbutt{
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#perbutt button{
+    height: 100%;
+    width: 20%;
+    background-image: linear-gradient(to top,  #3D94F6, #1E62D0);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#perbutt button:hover{
+    background-image: linear-gradient(to bottom,  #3D94F6, #1E62D0);
+
+}
+
 
 
 
@@ -438,7 +501,9 @@ iframe{
     width: 25%;
     height: 40%;
     border-radius: 20px;
-    background-color: rgb(15, 15, 15);
+    background-color: #0f0f0f;
+    cursor: pointer;
+
 }
 .bar-down img{
     filter: invert(1);
@@ -454,6 +519,85 @@ iframe{
 
 }
 
+#backgrounds-cell{
+    position: relative;
+    bottom: 20%;
+    left: 10px;
+    height: 25%;
+    width: 2.5%;
+    border-radius: 20px;
+    background-color: #070707;
+    border: solid 2px #070707;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#backgrounds-cell img{
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+#on{
+    position: relative;
+    bottom: 4%;
+    right: 23px;
+    height: 20px;
+    width: 2.5%;    
+    background-color: #383838be;
+    border: solid 2px #383838be;
+    border-radius:10px ;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#float{
+    height: 100%;
+    width: 100%;
+    background-color: #3D94F6;
+    position: absolute;
+    right: 90%;
+    transition: all 0.2s linear;
+    
+}
+
+#float::after{
+    content: "";
+    margin-left: 90%;
+    height: 100%;
+    width: 35%;
+    display:block;
+    background-color: #3df64c;
+    
+}
+
+
+#backgrounds-tale{
+    position: relative;
+    top: 46%;
+    left: 20%;
+    height: 4%;
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#backgrounds-tale img {
+    height: 80%;
+    width: 20%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
 @keyframes fresh{
 
     
@@ -464,6 +608,17 @@ iframe{
 
     100%{
         transform: rotate(1deg);
+    }
+    
+
+}
+
+@keyframes on{
+
+    
+
+    to{
+        transform: translateX(30px);
     }
     
 
